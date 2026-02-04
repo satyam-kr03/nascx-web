@@ -636,17 +636,18 @@ a:hover {
   .nav-links {
     display: none;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
     background: var(--bg-primary);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     z-index: 100;
-    padding: 80px 24px 40px;
+    padding: 32px 24px 40px;
+    overflow-y: auto;
   }
 
   .nav-links.mobile-open {
@@ -657,12 +658,15 @@ a:hover {
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    width: 100%;
   }
 
   .nav-links-main a {
-    font-size: 20px;
-    padding: 12px 24px;
+    font-size: 18px;
+    padding: 14px 24px;
     text-align: center;
+    width: 100%;
+    display: block;
   }
 
   .nav-actions {
