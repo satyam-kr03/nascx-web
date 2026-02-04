@@ -644,8 +644,9 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 32px;
     z-index: 100;
+    padding: 80px 24px 40px;
   }
 
   .nav-links.mobile-open {
@@ -655,11 +656,13 @@ a:hover {
   .nav-links-main {
     flex-direction: column;
     gap: 8px;
+    align-items: center;
   }
 
   .nav-links-main a {
-    font-size: 18px;
+    font-size: 20px;
     padding: 12px 24px;
+    text-align: center;
   }
 
   .nav-actions {
@@ -668,8 +671,9 @@ a:hover {
     padding-left: 0;
     border-left: none;
     margin-top: 16px;
-    padding-top: 16px;
+    padding-top: 24px;
     border-top: 1px solid var(--border-color);
+    gap: 16px;
   }
 
   .github-text {
@@ -678,6 +682,13 @@ a:hover {
 
   .mobile-nav-toggle {
     display: block;
+    position: relative;
+    z-index: 102;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 102;
   }
 }
 
